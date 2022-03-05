@@ -1,7 +1,7 @@
 const std = @import("std");
 const testing = std.testing;
 
-const ziglyph = @import("ziglyph");
+const zt = @import("zigmod-test");
 
 export fn add(a: i32, b: i32) i32 {
     return a + b;
@@ -11,6 +11,6 @@ test "basic add functionality" {
     try testing.expect(add(3, 7) == 10);
 }
 
-test "ziglyph" {
-    ziglyph.foo();
+test "zt" {
+    zt.foo();
 }
